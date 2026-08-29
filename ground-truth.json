@@ -23,6 +23,16 @@
       "verdict": "cve",
       "via": "requests",
       "reference": "GHSA-65pc-fj4g-8rjx"
+    },
+    "sqlparse@0.5.5": {
+      "verdict": "cve",
+      "via": "Django",
+      "reference": "GHSA-3496-9g83-7v6x"
+    },
+    "click@8.1.8": {
+      "verdict": "cve",
+      "via": "Flask",
+      "reference": "PYSEC-2026-2132"
     }
   }
 }
