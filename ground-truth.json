@@ -1,38 +1,197 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
+  "benchmarkId": "BenchmarkSCA-PyPI",
   "ecosystem": "PyPI",
   "verifiedAt": "2026-08-29",
-  "cases": {
-    "Django@3.2": {
-      "verdict": "cve",
-      "declaredAs": "Django==3.2.0",
-      "why": "canonical locked version; known SQL-injection and denial-of-service advisories"
-    },
-    "requests@2.19.0": { "verdict": "cve", "reference": "CVE-2018-18074" },
-    "PyYAML@5.1": { "verdict": "cve", "reference": "CVE-2020-1747" },
-    "Flask@3.0.0": { "verdict": "cve", "reference": "GHSA-68rp-wp8r-4726" },
-    "Jinja2@3.1.6": { "verdict": "clean", "why": "patched-version precision control" }
+  "oracle": "Every exact resolved package is independently checked against OSV; finding means one or more active advisories, clean means none.",
+  "minimums": {
+    "precision": 1,
+    "recall": 1,
+    "f1": 1,
+    "accuracy": 1,
+    "coverage": 1,
+    "packages": 20,
+    "findings": 8,
+    "clean": 12,
+    "direct": 5,
+    "transitive": 15
   },
-  "transitiveCases": {
-    "urllib3@1.23": {
-      "verdict": "cve",
-      "via": "requests",
-      "reference": "GHSA-2xpw-w6gg-jr37"
+  "packages": [
+    {
+      "name": "asgiref",
+      "version": "3.11.1",
+      "expected": "clean",
+      "relation": "transitive",
+      "sourceFile": "Pipfile.lock",
+      "references": []
     },
-    "idna@2.7": {
-      "verdict": "cve",
-      "via": "requests",
-      "reference": "GHSA-65pc-fj4g-8rjx"
+    {
+      "name": "blinker",
+      "version": "1.9.0",
+      "expected": "clean",
+      "relation": "transitive",
+      "sourceFile": "Pipfile.lock",
+      "references": []
     },
-    "sqlparse@0.5.5": {
-      "verdict": "cve",
-      "via": "Django",
-      "reference": "GHSA-3496-9g83-7v6x"
+    {
+      "name": "certifi",
+      "version": "2026.7.22",
+      "expected": "clean",
+      "relation": "transitive",
+      "sourceFile": "Pipfile.lock",
+      "references": []
     },
-    "click@8.1.8": {
-      "verdict": "cve",
-      "via": "Flask",
-      "reference": "PYSEC-2026-2132"
+    {
+      "name": "chardet",
+      "version": "3.0.4",
+      "expected": "clean",
+      "relation": "transitive",
+      "sourceFile": "Pipfile.lock",
+      "references": []
+    },
+    {
+      "name": "click",
+      "version": "8.1.8",
+      "expected": "finding",
+      "relation": "transitive",
+      "sourceFile": "Pipfile.lock",
+      "references": [
+        "PYSEC-2026-2132"
+      ]
+    },
+    {
+      "name": "django",
+      "version": "3.2",
+      "expected": "finding",
+      "relation": "direct",
+      "sourceFile": "requirements.txt",
+      "references": [
+        "GHSA-2gwj-7jmv-h26r"
+      ]
+    },
+    {
+      "name": "flask",
+      "version": "3.0.0",
+      "expected": "finding",
+      "relation": "direct",
+      "sourceFile": "requirements.txt",
+      "references": [
+        "GHSA-68rp-wp8r-4726"
+      ]
+    },
+    {
+      "name": "idna",
+      "version": "2.7",
+      "expected": "finding",
+      "relation": "transitive",
+      "sourceFile": "Pipfile.lock",
+      "references": [
+        "GHSA-65pc-fj4g-8rjx"
+      ]
+    },
+    {
+      "name": "importlib-metadata",
+      "version": "8.7.1",
+      "expected": "clean",
+      "relation": "transitive",
+      "sourceFile": "Pipfile.lock",
+      "references": []
+    },
+    {
+      "name": "itsdangerous",
+      "version": "2.2.0",
+      "expected": "clean",
+      "relation": "transitive",
+      "sourceFile": "Pipfile.lock",
+      "references": []
+    },
+    {
+      "name": "jinja2",
+      "version": "3.1.6",
+      "expected": "clean",
+      "relation": "direct",
+      "sourceFile": "requirements.txt",
+      "references": []
+    },
+    {
+      "name": "markupsafe",
+      "version": "3.0.3",
+      "expected": "clean",
+      "relation": "transitive",
+      "sourceFile": "Pipfile.lock",
+      "references": []
+    },
+    {
+      "name": "pytz",
+      "version": "2026.3.post1",
+      "expected": "clean",
+      "relation": "transitive",
+      "sourceFile": "Pipfile.lock",
+      "references": []
+    },
+    {
+      "name": "pyyaml",
+      "version": "5.1",
+      "expected": "finding",
+      "relation": "direct",
+      "sourceFile": "requirements.txt",
+      "references": [
+        "GHSA-3pqx-4fqf-j49f"
+      ]
+    },
+    {
+      "name": "requests",
+      "version": "2.19.0",
+      "expected": "finding",
+      "relation": "direct",
+      "sourceFile": "requirements.txt",
+      "references": [
+        "GHSA-9hjg-9r4m-mvj7"
+      ]
+    },
+    {
+      "name": "sqlparse",
+      "version": "0.5.5",
+      "expected": "finding",
+      "relation": "transitive",
+      "sourceFile": "Pipfile.lock",
+      "references": [
+        "GHSA-3496-9g83-7v6x"
+      ]
+    },
+    {
+      "name": "typing-extensions",
+      "version": "4.16.0",
+      "expected": "clean",
+      "relation": "transitive",
+      "sourceFile": "Pipfile.lock",
+      "references": []
+    },
+    {
+      "name": "urllib3",
+      "version": "1.23",
+      "expected": "finding",
+      "relation": "transitive",
+      "sourceFile": "Pipfile.lock",
+      "references": [
+        "GHSA-2xpw-w6gg-jr37"
+      ]
+    },
+    {
+      "name": "werkzeug",
+      "version": "3.1.8",
+      "expected": "clean",
+      "relation": "transitive",
+      "sourceFile": "Pipfile.lock",
+      "references": []
+    },
+    {
+      "name": "zipp",
+      "version": "3.23.1",
+      "expected": "clean",
+      "relation": "transitive",
+      "sourceFile": "Pipfile.lock",
+      "references": []
     }
-  }
+  ]
 }

@@ -1,0 +1,127 @@
+{
+  "scan": {
+    "commit": "2c94c4d",
+    "scannedAt": "2026-08-29T09:56:00+05:30",
+    "trigger": "push",
+    "analyzerVersion": "3db6559658cd",
+    "sastVersion": "c4f9ce954093",
+    "reportedSCA": 8
+  },
+  "findings": [
+    {
+      "name": "click",
+      "version": "8.1.8"
+    },
+    {
+      "name": "django",
+      "version": "3.2"
+    },
+    {
+      "name": "flask",
+      "version": "3.0.0"
+    },
+    {
+      "name": "idna",
+      "version": "2.7"
+    },
+    {
+      "name": "pyyaml",
+      "version": "5.1"
+    },
+    {
+      "name": "requests",
+      "version": "2.19.0"
+    },
+    {
+      "name": "sqlparse",
+      "version": "0.5.5"
+    },
+    {
+      "name": "urllib3",
+      "version": "1.23"
+    }
+  ],
+  "scannedPackages": [
+    {
+      "name": "asgiref",
+      "version": "3.11.1"
+    },
+    {
+      "name": "blinker",
+      "version": "1.9.0"
+    },
+    {
+      "name": "certifi",
+      "version": "2026.7.22"
+    },
+    {
+      "name": "chardet",
+      "version": "3.0.4"
+    },
+    {
+      "name": "click",
+      "version": "8.1.8"
+    },
+    {
+      "name": "django",
+      "version": "3.2"
+    },
+    {
+      "name": "flask",
+      "version": "3.0.0"
+    },
+    {
+      "name": "idna",
+      "version": "2.7"
+    },
+    {
+      "name": "importlib-metadata",
+      "version": "8.7.1"
+    },
+    {
+      "name": "itsdangerous",
+      "version": "2.2.0"
+    },
+    {
+      "name": "jinja2",
+      "version": "3.1.6"
+    },
+    {
+      "name": "markupsafe",
+      "version": "3.0.3"
+    },
+    {
+      "name": "pytz",
+      "version": "2026.3.post1"
+    },
+    {
+      "name": "pyyaml",
+      "version": "5.1"
+    },
+    {
+      "name": "requests",
+      "version": "2.19.0"
+    },
+    {
+      "name": "sqlparse",
+      "version": "0.5.5"
+    },
+    {
+      "name": "typing-extensions",
+      "version": "4.16.0"
+    },
+    {
+      "name": "urllib3",
+      "version": "1.23"
+    },
+    {
+      "name": "werkzeug",
+      "version": "3.1.8"
+    },
+    {
+      "name": "zipp",
+      "version": "3.23.1"
+    }
+  ]
+}
+

@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-29T04:39:50.019Z",
+  "benchmarkId": "BenchmarkSCA-PyPI",
+  "ecosystem": "PyPI",
+  "oracleVerifiedAt": "2026-08-29",
+  "scan": {
+    "commit": "2c94c4d",
+    "scannedAt": "2026-08-29T09:56:00+05:30",
+    "trigger": "push",
+    "analyzerVersion": "3db6559658cd",
+    "sastVersion": "c4f9ce954093",
+    "reportedSCA": 8
+  },
+  "corpus": {
+    "packages": 20,
+    "findings": 8,
+    "clean": 12,
+    "direct": 5,
+    "transitive": 15
+  },
+  "score": {
+    "total": 20,
+    "tp": 8,
+    "fp": 0,
+    "fn": 0,
+    "tn": 12,
+    "precision": 1,
+    "recall": 1,
+    "f1": 1,
+    "accuracy": 1
+  },
+  "byRelation": {
+    "direct": {
+      "total": 5,
+      "tp": 4,
+      "fp": 0,
+      "fn": 0,
+      "tn": 1,
+      "precision": 1,
+      "recall": 1,
+      "f1": 1,
+      "accuracy": 1
+    },
+    "transitive": {
+      "total": 15,
+      "tp": 4,
+      "fp": 0,
+      "fn": 0,
+      "tn": 11,
+      "precision": 1,
+      "recall": 1,
+      "f1": 1,
+      "accuracy": 1
+    }
+  },
+  "coverage": 1,
+  "unexpectedFindings": [],
+  "unscannedOracle": [],
+  "unlabeledScanned": [],
+  "minimums": {
+    "precision": 1,
+    "recall": 1,
+    "f1": 1,
+    "accuracy": 1,
+    "coverage": 1,
+    "packages": 20,
+    "findings": 8,
+    "clean": 12,
+    "direct": 5,
+    "transitive": 15
+  }
+}
