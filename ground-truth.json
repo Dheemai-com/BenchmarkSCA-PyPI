@@ -3,10 +3,26 @@
   "ecosystem": "PyPI",
   "verifiedAt": "2026-08-29",
   "cases": {
-    "Django@3.2.0": { "verdict": "cve", "why": "known SQL-injection and denial-of-service advisories" },
+    "Django@3.2": {
+      "verdict": "cve",
+      "declaredAs": "Django==3.2.0",
+      "why": "canonical locked version; known SQL-injection and denial-of-service advisories"
+    },
     "requests@2.19.0": { "verdict": "cve", "reference": "CVE-2018-18074" },
     "PyYAML@5.1": { "verdict": "cve", "reference": "CVE-2020-1747" },
     "Flask@3.0.0": { "verdict": "cve", "reference": "GHSA-68rp-wp8r-4726" },
     "Jinja2@3.1.6": { "verdict": "clean", "why": "patched-version precision control" }
+  },
+  "transitiveCases": {
+    "urllib3@1.23": {
+      "verdict": "cve",
+      "via": "requests",
+      "reference": "GHSA-2xpw-w6gg-jr37"
+    },
+    "idna@2.7": {
+      "verdict": "cve",
+      "via": "requests",
+      "reference": "GHSA-65pc-fj4g-8rjx"
+    }
   }
 }
