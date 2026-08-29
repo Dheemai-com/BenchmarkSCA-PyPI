@@ -1,7 +1,7 @@
 # BenchmarkSCA-PyPI scorecard
 
 - Corpus: **20** fully labelled resolved packages
-- Scan commit: `2c94c4d`
+- Scan commit: `11eb40e`
 - Analyzer: `3db6559658cd`
 - Precision: **100.00%**
 - Recall: **100.00%**

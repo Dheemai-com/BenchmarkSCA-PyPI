@@ -1,7 +1,7 @@
 {
   "scan": {
-    "commit": "2c94c4d",
-    "scannedAt": "2026-08-29T09:56:00+05:30",
+    "commit": "11eb40e",
+    "scannedAt": "2026-08-29T10:10:00+05:30",
     "trigger": "push",
     "analyzerVersion": "3db6559658cd",
     "sastVersion": "c4f9ce954093",
@@ -124,4 +124,3 @@
     }
   ]
 }
-
